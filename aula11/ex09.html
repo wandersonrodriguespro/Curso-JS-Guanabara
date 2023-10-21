@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .quest h1{
+            text-align: center;
+            color: white;
+            padding-bottom: 35px;
+        }
+        .quest{
+            background-color: rgb(79, 79, 172);
+            padding: 40px;
+            text-align: center;
+        }
+        .quest input{
+            padding: 10px;
+        }
+
+        input[type="button"]{
+            background-color: green;
+            color: white;
+            font-weight: 900;
+            border: 0;
+            margin-left: 30px;
+            cursor: pointer;
+        }
+
+        #res{
+            color: white;
+            padding-top: 50px;
+            font-weight: 900;
+        }
+        #res p {
+            padding-bottom: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="quest">
+        <h1>Nacionalidade</h1>
+        <input type="text" id="pais" name="pais" placeholder="Qual seu Pais?">
+        <input type="button" value="Conferir" onclick="conferir()">
+        
+        <div id="res">
+
+        </div>
+
+    </div>
+
+    
+
+    <script>
+        
+        function conferir() {
+            var textnac = document.querySelector('input#pais')
+            var res = document.querySelector('div#res')
+            var val = textnac.value
+            res.innerHTML = '<p>Seu país é '+ val + ' portanto você é</p>'
+            
+            if (val == 'Brasil'){
+                res.innerHTML += '<p>Brasileiro</p>'
+            }else if(val == 'brasil'){
+                res.innerHTML += '<p>Brasileiro</p>'
+            }else{
+                res.innerHTML += '<p>Estrangeiro</p>'
+            }
+        }
+    </script>
+
+
+
+</body>
+</html>

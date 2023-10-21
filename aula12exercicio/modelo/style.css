@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #4F4FAC;
+    font-size: 18px;
+    text-align: center;
+    padding: 40px;
+}
+
+header{
+    color: white;
+}
+
+section{
+    background-color: white;
+    border-radius: 20px;
+    padding: 50px;
+    width: 700px;
+    margin: 20px auto;
+    box-shadow: 3PX 3PX 10PX rgba(48, 47, 47, 0.363);
+}
+
+footer{
+    color: white;
+    font-size: 15px;
+    font-style: italic;
+}
